@@ -10,6 +10,30 @@
 	新版框架中实现相近功能的代码应当存在于一对.c/.h文件之中，文件命名采用大驼峰式命名（MotorTask.c, MusicAutoPlay.h）
 	
 ### 框架基本配置文件.h
+
+### 源文件对应头文件.h
+	
+	/**
+	 ***********************************(C) COPYRIGHT 2020 JiaoDragon************************************
+	 * @file       CallbackAdministration.h
+	 * @brief      Centralized management of callback functions
+	 * @note
+	 * @Version    V1.0.0
+	 * @Date       September-3-2020
+	 ***********************************(C) COPYRIGHT 2020 JiaoDragon************************************
+	 */
+
+	/***	MAP	***/
+
+	/***	CONSTANT VALUE	***/
+
+	/***	TYPE DEFINE	***/
+
+	/***	SPECIFIC INIT CONFIGURATION	***/
+
+	/***	EXTERNAL VARIABLES	***/
+
+	/***	APIs	***/
 	
 		
 ## 变量命名规范
