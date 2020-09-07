@@ -19,6 +19,7 @@
 	 * @file       
 	 * @brief      
 	 * @note
+	 * @author
 	 * @Version    
 	 * @Date   
 	 *********************************** COPYRIGHT 2020-2030 JiaoDragon ************************************
@@ -31,6 +32,7 @@
 	 * @file       CallbackAdministration.h
 	 * @brief      Centralized management of callback functions
 	 * @note
+	 * @author	   爱谁谁
 	 * @Version    V1.0.0
 	 * @Date       September-3-2020
 	 ***********************************(C) COPYRIGHT 2020-2030 JiaoDragon************************************
@@ -76,16 +78,19 @@
 ## 函数命名规范
 
 ### 文件内函数命名规范
-	函数的名称应当用下划线连接，其中首字母大写，第一部分应当为文件名称（除中断回调管理文件外），接下来为子模块名称，而后以此类推，最后补上函数的功能，例如Windmill_blade_color_init()、Windmill_motor_state_control()
+	函数的名称应当用下划线连接，其中首字母大写，第一部分应当为文件名称（除中断回调管理文件外），接下来为子模块名称，而后以此类推，最后补上函数的功能。
+	
+	例如Windmill_blade_color_init()、Windmill_motor_state_control()
 
 ### 类内函数命名规范
-
+	
 ## 宏定义命名规范
 	
 ## 注释规范
-
+	
 ## 控制算法规范
-
+	
 ## 类/结构体规范
-
+	
 ## git规范
+	
