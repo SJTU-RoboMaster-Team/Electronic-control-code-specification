@@ -74,9 +74,7 @@
 	另外，尽量避免使用宏定义，宏定义在很多情况下会影响编译的效率，或者造成一些意想不到的错误。
 	如果需要用宏定义定义一个常数，不妨用如下的方式：
 	以工程车为例，如果我要定义一个关于横移电机转动速度的常数，那么我可以在header文件中：
-	extern const uint32_t CROSS_MOVE_SPEED;
-	在source文件中：
-	const uint32_t CROSS_MOVE_SPEED = 10;
+	inline constexpr uint32_t CROSS_MOVE_SPEED = 10;
 	以此来完成常量的声明。
 ### 局部变量
 	采用驼峰命名法，确定好变量的类型，不要错乱。
