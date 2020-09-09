@@ -83,6 +83,7 @@
 	例如Windmill_blade_color_init()、Windmill_motor_state_control()
 
 ### 类内函数命名规范
+	大驼峰命名（Rx，ID之类的专有名词保持）。例：RxHandle,TxHandle,Handle,Reset,Init。读取/返回private的成员变量以Get/Set开头，例：SetTargetAngle，GetRxID
 	
 ## 宏定义命名规范
 	
@@ -91,6 +92,21 @@
 ## 控制算法规范
 	
 ## 类/结构体规范
+### 类
+* ***严禁new！！！*** （默认堆栈很小）
+* 类内函数命名规范参见上文
+* 命名用大驼峰，不加后缀。
+* 构造函数里不需要写太多初始化，在Reset或Init中完成所有初始化。
+* 用Handle函数完成对object的操作，例：调用Chassis：：chassis.Handle();即可完成整个底盘的intensity的计算
+* 尽量用“读取”而不是“写入”，如：用遥控器控制底盘过程中，底盘电机的targetAngle的赋值过程最好在Chassis中而不是Remote中
+* 上层类的object如chassis为对应类的静态成员变量，小驼峰命名。
+* 函数实现尽量写在.cpp中。
+* 用好inline和指针（减少数据传递量）
+### 结构体
+* 命名用大驼峰，加后缀_t
+* 无需__packed
+### 枚举
+* 命名用大驼峰，加后缀_e
 	
 ## git规范
 	
