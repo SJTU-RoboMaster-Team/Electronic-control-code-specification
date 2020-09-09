@@ -78,10 +78,12 @@
 ## 函数命名规范
 
 ### 文件内函数命名规范
-	大驼峰命名（Rx，ID之类的专有名词保持），例：MainControlLoop。如果有多个专有名词叠加应当以下划线进行分割，例：HAL_CAN_RxCpltCallback。
+	大驼峰命名（Rx，ID之类的专有名词保持），例：MainControlLoop。
+	如果有多个专有名词叠加应当以下划线进行分割，例：HAL_CAN_RxCpltCallback。
 
 ### 类内函数命名规范
-	大驼峰命名（Rx，ID之类的专有名词保持）。例：RxHandle,TxHandle,Handle,Reset,Init。读取/返回private的成员变量以Get/Set开头，例：SetTargetAngle，GetRxID。
+	大驼峰命名（Rx，ID之类的专有名词保持）。例：RxHandle,TxHandle,Handle,Reset,Init。
+	读取/返回private的成员变量以Get/Set开头，例：SetTargetAngle，GetRxID。
 
 ## 宏定义命名规范
 
@@ -116,8 +118,3 @@
 * 命名用大驼峰，加后缀_e
 	
 ## git规范
-
-#附件
-
-
-
