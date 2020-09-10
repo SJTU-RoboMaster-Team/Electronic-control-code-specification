@@ -2,12 +2,12 @@
 # Electronic-control-code-specification
 
 ## 前言
-	这是电控部三个人在某个周末突发奇想搞的电控部代码命名规范
+这是电控部三个人在某个周末突发奇想搞的电控部代码命名规范
 
 ## 文件规范	
 
 ### 文件形式
-	新版框架中实现相近功能的代码应当存在于一对.c/.h文件之中，文件命名采用大驼峰式命名（MotorTask.c, MusicAutoPlay.h）
+新版框架中实现相近功能的代码应当存在于一对.c/.h文件之中，文件命名采用大驼峰式命名（MotorTask.c, MusicAutoPlay.h）
 
 ### 框架基本配置文件.h
 
