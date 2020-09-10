@@ -130,7 +130,6 @@
 读取/返回private的成员变量以Get/Set开头，例：SetTargetAngle，GetRxID。
 
 ## 宏定义命名规范
-
 宏定义应当全部使用大写字母，单词之间加下划线进行分割（枚举同样建议使用此方式定义）。例：#define PI_ROUNDED 3.14。\
 （来自华为C语言规范）除非必要，应尽可能使用函数代替宏。宏对比函数，有一些明显的缺点：
 * 宏缺乏类型检查，不如函数调用检查严格。
@@ -139,6 +138,21 @@
 * 宏如果调用的很多，会造成代码空间的浪费，不如函数空间效率高。
 
 ## 注释规范
+框架中的函数应当在开头补全如下注释
+	/**
+	 * @brief Initialize a dance task and initialize its soft timer.
+	 * @param timer_1ms The soft timer for dance task, defined in SoftTimer.c.
+	 * @param t_song Script of the motion.
+	 * @param task_address The pointer of the pointer to the dance task. Can be [(task_s**)0] under cases where the function is called by user or there's no need to know which task music auto-play is.
+	 * @return The state of the initialize procedure.
+	 *      @arg 0 Fail
+	 *      @arg 1 Succeed
+	 */
+且相对重要的函数或较难理解的函数应当额外加入@author注释。
+
+文件开头的注释如上文所述。
+
+函数内重要步骤应当用//开头的注释进行解释，注释书写完成的函数应当能够让中等水平的队员能够明白绝大部分步骤的意义。
 
 ## 控制算法规范
 
@@ -153,9 +167,11 @@
 * 上层类的object如chassis为对应类的静态成员变量，小驼峰命名。
 * 函数实现尽量写在.cpp中。
 * 用好inline和指针（减少数据传递量）
+
 ### 结构体
 * 命名用大驼峰，加后缀_t
 * 无需__packed
+
 ### 枚举
 * 命名用大驼峰，加后缀_e
 	
