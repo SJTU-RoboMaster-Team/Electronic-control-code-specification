@@ -143,6 +143,10 @@
 	statistic 可缩写为 stat 
 	synchronize 可缩写为 sync 
 	temp 可缩写为 tmp
+### 类成员变量
+	建议还是统一采用驼峰式命名法。
+	e.g. targetAngle,realAngle;
+
 
 ### 静态全局变量
  
