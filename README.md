@@ -13,6 +13,7 @@
 
 ### 更新文档
 完成更新后，应当在UpdateHistory.md中加入如下形式的版本的更新说明
+
 	## version a.b.c
 	@author 爱谁谁
 
