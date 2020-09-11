@@ -172,6 +172,7 @@
 
 ## 注释规范
 框架中的函数应当在开头补全如下注释
+
 	/**
 	 * @brief Initialize a dance task and initialize its soft timer.
 	 * @param timer_1ms The soft timer for dance task, defined in SoftTimer.c.
