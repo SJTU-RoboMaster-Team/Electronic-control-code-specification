@@ -129,31 +129,33 @@ clawInited : 爪子是否已经初始化过了
 * 在命名变量的时候，最好写全单词，不要嫌烦，大多数IDE都有补全功能，一个完整的变量名更加易读。
 * 在变量名过长的时候，可考虑采用下划线，将变量按照语义分成若干个部分，每个部分确定一个语义。
 
-	有些情况下可以采用公认的缩写：
-	argument 可缩写为 arg 
-	buffer 可缩写为 buff 
-	clock 可缩写为 clk 
-	command 可缩写为 cmd 
-	compare 可缩写为 cmp 
-	configuration 可缩写为 cfg 
-	device 可缩写为 dev 
-	error 可缩写为 err 
-	hexadecimal 可缩写为 hex 
-	increment 可缩写为 inc、 
-	initialize 可缩写为 init 
-	maximum 可缩写为 max 
-	message 可缩写为 msg 
-	minimum 可缩写为 min 
-	parameter 可缩写为 para 
-	previous 可缩写为 prev 
-	register 可缩写为 reg 
-	semaphore 可缩写为 sem 
-	statistic 可缩写为 stat 
-	synchronize 可缩写为 sync 
-	temp 可缩写为 tmp
+* 有些情况下可以采用公认的缩写：
+
+		argument 可缩写为 arg 
+		buffer 可缩写为 buff 
+		clock 可缩写为 clk 
+		command 可缩写为 cmd 
+		compare 可缩写为 cmp 
+		configuration 可缩写为 cfg 
+		device 可缩写为 dev 
+		error 可缩写为 err 
+		hexadecimal 可缩写为 hex 
+		increment 可缩写为 inc、 
+		initialize 可缩写为 init 
+		maximum 可缩写为 max 
+		message 可缩写为 msg 
+		minimum 可缩写为 min 
+		parameter 可缩写为 para 
+		previous 可缩写为 prev 
+		register 可缩写为 reg 
+		semaphore 可缩写为 sem 
+		statistic 可缩写为 stat 
+		synchronize 可缩写为 sync 
+		temp 可缩写为 tmp
 ### 类成员变量
-	建议还是统一采用驼峰式命名法。
-	e.g. targetAngle,realAngle;
+* 建议还是统一采用驼峰式命名法。
+
+		e.g. targetAngle,realAngle;
 
 
 ### 静态全局变量
